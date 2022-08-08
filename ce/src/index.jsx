@@ -5,9 +5,7 @@ const home=({userData})=>{
     const objUsers = Object.keys(users[0] || {})
     return (
         <>
-            
             {objUsers.map((user)=><Link key={user} to={`/customer/${user}`}>{user}</Link>)}
-            {/* {objUsers.map((user)=><li key={user}>{user}</li>)} */}
         </>
     )
 }
